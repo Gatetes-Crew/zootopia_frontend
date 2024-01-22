@@ -71,9 +71,9 @@ function login() {
   margin-top: 12%;
   margin-left: 38%;
   padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(235, 202, 159);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(250, 247, 247, 0.1);
   background:burlywood;
   opacity: 0.9;
   
@@ -88,8 +88,8 @@ function login() {
 .input-field {
   margin-bottom: 30px;
   padding: 8px;
-  border: 2px solid #3b3a3a;
-  border-radius: 3px;
+  border: 2px solid rgb(212, 163, 99);
+  border-radius: 6px;
 }
 
 .login-button {
@@ -97,15 +97,17 @@ function login() {
   color:black;
   padding: 10px;
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   cursor: pointer;
   width:30%;
   margin-left: 35%;
   margin-top: 5%;
+  transition: 0.3s;
 }
 
 .login-button:hover {
   background-color: #45a049;
+  color : white;
 }
 
 </style>
