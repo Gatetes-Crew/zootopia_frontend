@@ -88,7 +88,7 @@ function login() {
 .input-field {
   margin-bottom: 30px;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 2px solid #3b3a3a;
   border-radius: 3px;
 }
 
