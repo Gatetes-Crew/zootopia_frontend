@@ -1,9 +1,21 @@
+
+
+
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import DashboardView from './DashboardView.vue';
+
 </script>
 
-<template>
+<style scoped>
+
+
+
+</style>
+
   <main>
-    <TheWelcome />
+      <DashboardView/>
   </main>
-</template>
+ <template>
+
+ </template>
+
