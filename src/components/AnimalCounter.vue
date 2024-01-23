@@ -1,46 +1,53 @@
 
 <template>
-    <div>
-      <h1>Contador de Animales: {{ animalCount }}</h1>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    props: {
-      initialCount: {
-        type: Number,
-        default: 0,
-      },
-    },
-    data() {
-      return {
-        animalCount: this.initialCount,
-      };
-    },
-    watch: {
-      initialCount(newValue) {
-        this.animalCount = newValue;
-      },
-    },
-    methods: {
-      incrementAnimal() {
-        
-        this.$emit('incrementAnimal');
-      },
-      decrementAnimal() {
-        
-        this.$emit('decrementAnimal');
-      },
-    },
-  };
-  </script>
-  
-  <style scoped>
-  
+  <div>
+    <h1>Contador de Animales: {{ animalCount }}</h1>
+    <button @click="incrementAnimal">Incrementar</button>
+    <button @click="decrementAnimal">Decrementar</button>
+  </div>
+</template>
 
+<script>
+export default {
+  props: {
+    initialCount: {
+      type: Number,
+      default: 0,
+    },
+  },
   
-  </style>
+  computed: {
+    animalCount: {
+      get() {
+        return this.initialCount;
+      },
+      set(newValue) {
+        this.$emit('update:initialCount', newValue);
+      },
+    },
+  },
+  watch: {
+    initialCount(newValue) {
+      this.animalCount = newValue;
+    },
+  },
+  methods: {
+    incrementAnimal() {
+      this.animalCount++;
+      this.$emit('incrementAnimal', this.animalCount);
+    },
+    decrementAnimal() {
+      this.animalCount--;
+      this.$emit('decrementAnimal', this.animalCount);
+    },
+  },
+};
+</script>
+
+<style scoped>
+
+
+</style>
 
 
 
