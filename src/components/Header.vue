@@ -2,8 +2,8 @@
 
 <header> 
     <div class="brown-header">
-    <img src= "../assets/images/logo zootopia.png"/>
     <img src= "../assets/images/zootopia2.png"/>
+    <img src= "../assets/images/zootopia1.png"/>
     </div>
   </header>
 

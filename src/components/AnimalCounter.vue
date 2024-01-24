@@ -15,7 +15,7 @@
 
 p {
   font-size: 30px;
-  text-align: left;
+  text-align: center;
 }
 
 
