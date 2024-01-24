@@ -4,7 +4,7 @@ import LoginView from '../views/LoginView.vue';
 
 <template>
   <main>
-    
-    <!-- <LoginView/> -->
+    <LoginView />
   </main>
 </template>
+
