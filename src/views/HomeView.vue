@@ -2,20 +2,13 @@
 
 
 <script setup>
-import DashboardView from './DashboardView.vue';
+import DashboardView from '../views/DashboardView.vue';
 
 </script>
 
-<style scoped>
-
-
-
-</style>
-
+<template>
   <main>
-      <DashboardView/>
+     <DashboardView />
   </main>
- <template>
-
- </template>
+</template>
 

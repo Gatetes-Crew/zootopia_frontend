@@ -1,28 +1,21 @@
 
 <template>
+  <Header />
+
+  
     <div>
-      <AnimalCounter :initialCount="initialCount" @incrementAnimal="handleIncrement" @decrementAnimal="handleDecrement" />
+      <AnimalCounter  />
     </div>
   </template>
   
   <script setup>
   import { ref } from 'vue';
   import AnimalCounter from "@/components/AnimalCounter.vue";
+  import Header from "../components/Header.vue";
   
-  const initialCount = ref(5);
-  
-  const handleIncrement = () => {
-    initialCount.value++;
-  };
-  
-  const handleDecrement = () => {
-    initialCount.value--;
-  };
   </script>
 
-
-
-                                                                                                                                                                                              
+                                                                                                                                                                                     
 
 
 

@@ -14,7 +14,6 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 
-/*app.component('home-view', HomeView);
-app.component('animal-counter', AnimalCounter);*/
+
 
 app.mount('#app')

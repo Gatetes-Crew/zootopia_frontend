@@ -3,18 +3,14 @@
 <header> 
     <div class="brown-header">
     <img src= "../assets/images/logo zootopia.png"/>
-    <img src= "../assets/images/zootopia1.png"/>
+    <img src= "../assets/images/zootopia2.png"/>
     </div>
   </header>
 
-    <div>
-      <h1>Dashboard</h1>
-      <p v-if="isAuthenticated">Bienvenido al panel de control</p>
-      <p v-else>Inicia sesión para acceder al panel de control</p>
-    </div>
+    
   </template>
 
-<script>
+<script >
 export default {
   name: 'Header',
 };
@@ -22,7 +18,7 @@ export default {
 
 <style scoped>
 .brown-header {
-  background-color: #8b4513; 
+  background-color: #A8856F; 
   padding: 10px;
   display: flex;
   justify-content: space-between;
