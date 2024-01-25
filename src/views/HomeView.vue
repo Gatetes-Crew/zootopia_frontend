@@ -1,9 +1,14 @@
+
+
+
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import DashboardView from '../views/DashboardView.vue';
+import LoginView from '../views/LoginView.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <LoginView />
   </main>
 </template>
+
