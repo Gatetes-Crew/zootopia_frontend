@@ -1,28 +1,20 @@
-
 <template>
-  <div>
-    <p>Actualmente hay   </p>
-    <p>{{ animalCount }}</p>
-     <p>animales en la reserva. </p>
-  </div>
+	<div>
+		<p>Actualmente hay</p>
+		<p id="animal_count">{{ animalCount }} 12</p>
+		<p>animales en la reserva.</p>
+	</div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped>
-
-p {
-  font-size: 30px;
-  text-align: center;
+#animal_count {
+  font-size: 100px;
+  color: rgb(108, 210, 108);
 }
-
-
+p {
+	font-size: 30px;
+	text-align: center;
+}
 </style>
-
-
-
-    
-      
-  
